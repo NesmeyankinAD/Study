@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Task_9.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBECAC5-CDF4-437B-AE07-D5DBC5431D0B}|Task_9.3\\Task_9.3.vcxproj|C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Task_9.3\\Task_9.3\\task_9.3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7DBECAC5-CDF4-437B-AE07-D5DBC5431D0B}|Task_9.3\\Task_9.3.vcxproj|solutionrelative:Task_9.3\\task_9.3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "task_9.3.cpp",
+              "DocumentMoniker": "C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Task_9.3\\Task_9.3\\task_9.3.cpp",
+              "RelativeDocumentMoniker": "Task_9.3\\task_9.3.cpp",
+              "ToolTip": "C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Task_9.3\\Task_9.3\\task_9.3.cpp",
+              "RelativeToolTip": "Task_9.3\\task_9.3.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-04T17:35:31.261Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

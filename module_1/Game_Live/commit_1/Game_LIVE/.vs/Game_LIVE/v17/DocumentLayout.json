@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Game_Live\\Game_LIVE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09662BDB-C998-47BB-9558-EF259DB7D408}|Game_LIVE\\Game_LIVE.vcxproj|C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Game_Live\\Game_LIVE\\Game_LIVE\\LIVE.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09662BDB-C998-47BB-9558-EF259DB7D408}|Game_LIVE\\Game_LIVE.vcxproj|solutionrelative:Game_LIVE\\LIVE.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LIVE.cpp",
+              "DocumentMoniker": "C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Game_Live\\Game_LIVE\\Game_LIVE\\LIVE.cpp",
+              "RelativeDocumentMoniker": "Game_LIVE\\LIVE.cpp",
+              "ToolTip": "C:\\Users\\mrsas\\Desktop\\Cpp_Folder\\Game_Live\\Game_LIVE\\Game_LIVE\\LIVE.cpp",
+              "RelativeToolTip": "Game_LIVE\\LIVE.cpp",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAAGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T13:08:43.961Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
