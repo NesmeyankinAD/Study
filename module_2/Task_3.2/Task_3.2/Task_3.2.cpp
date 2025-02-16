@@ -12,22 +12,12 @@ public:
 	Counter() 
 	{
 		this->value = 1;
-	}; 
+	};
 
-
-	bool Master(char command)
+	Counter(int InitValue)
 	{
-		switch (static_cast<int>(command))
-		{
-			case 43: IncrCounter(); return 1; break;
-			case 45: DecrCounter(); return 1; break;
-			case 61: CheckValue();	return 1; break;
-			case 120:				return 0; break;
-
-			default: std::cout << "Неверная комманда!" << std::endl; break;
-
-		}
-	}
+		this->value = InitValue;
+	};
 
 	void IncrCounter()
 	{
@@ -42,11 +32,6 @@ public:
 	void CheckValue()
 	{
 		std::cout << "Значение счётика: " << this->value << std::endl;
-	}
-
-	void SetValue(int Value)
-	{
-		this->value = Value;
 	}
 		
 };
@@ -71,7 +56,7 @@ int main()
 		std::cout << "Введите начальное значение счётчика: ";
 		std::cin >> InitValue;
 
-		counter.SetValue(InitValue);
+		counter = Counter(InitValue);
 	}
 	
 	bool Work{ true };
@@ -82,6 +67,16 @@ int main()
 		std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
 		std::cin >> command;
 
-		Work = counter.Master(command);
+		switch (static_cast<int>(command))
+		{
+		case '+': counter.IncrCounter();break;
+		case '-': counter.DecrCounter();break;
+		case '=': counter.CheckValue();	break;
+		case 'x': Work = false;			break;
+
+		default: std::cout << "Неверная комманда!" << std::endl; break;
+		}
 	}
+
+	return EXIT_SUCCESS;
 }

@@ -10,38 +10,38 @@ private:
 public:
 	Calculator() 
 	{
-		this->num1 = NULL;
-		this->num2 = NULL;
+		this->num1 = 0;
+		this->num2 = 0;
 	};
 
-	void add()
+	double add()
 	{
-		std::cout << "num1 + num2 = " << (this->num1 + this->num2) << std::endl;
+		return (this->num1 + this->num2);
 	}
 	
-	void multiply()
+	double multiply()
 	{
-		std::cout << "num1 * num2 = " << (this->num1 * this->num2) << std::endl;
+		return (this->num1 * this->num2);
 	}
 
-	void substract_1_2()
+	double substract_1_2()
 	{
-		std::cout << "num1 - num2 = " << (this->num1 - this->num2) << std::endl;
+		return (this->num1 - this->num2);
 	}
 
-	void substract_2_1()
+	double substract_2_1()
 	{
-		std::cout << "num2 - num1 = " << (this->num2 - this->num1) << std::endl;
+		return (this->num2 - this->num1);
 	}
 
-	void divide_1_2()
+	double divide_1_2()
 	{
-		std::cout << "num1 / num2 = " << (this->num1 / this->num2) << std::endl;
+		return (this->num1 / this->num2);
 	}
 
-	void divide_2_1()
+	double divide_2_1()
 	{
-		std::cout << "num2 / num1 = " << (this->num2 / this->num1) << std::endl;
+		return (this->num2 / this->num1);
 	}
 	
 	bool set_num1(double num1)
@@ -87,16 +87,19 @@ int main()
 
 		if (calc.set_num1(N1) && calc.set_num2(N2)) // ввод ненулевых чисел
 		{
-			calc.add();
-			calc.multiply();
-			calc.substract_1_2();
-			calc.substract_2_1();
-			calc.divide_1_2();
-			calc.divide_2_1();
+			std::cout << "num1 + num2 = " << calc.add() << std::endl;
+			std::cout << "num1 * num2 = " << calc.multiply() << std::endl;
+			std::cout << "num1 - num2 = " << calc.substract_1_2() << std::endl;
+			std::cout << "num2 - num1 = " << calc.substract_2_1() << std::endl;
+			std::cout << "num1 / num2 = " << calc.divide_1_2() << std::endl;
+			std::cout << "num2 / num1 = " << calc.divide_2_1() << std::endl;
 		}
 		else
 		{
-			std::cout << "Неверный ввод! Вводите числа не равные нулю." << std::endl;
+			if (!calc.set_num1(N1) && !calc.set_num2(N2)) std::cout << "Неверный ввод! Оба числа равны нулю. Вводите числа не равные нулю." << std::endl;
+
+			else if(!calc.set_num1(N1))	std::cout << "Неверный ввод! num1 = 0. Вводите числа не равные нулю." << std::endl;
+			else						std::cout << "Неверный ввод! num2 = 0. Вводите числа не равные нулю." << std::endl;
 		}
 
 		std::cout << "Хотите выйти? (1 - да, 0 - нет): ";
