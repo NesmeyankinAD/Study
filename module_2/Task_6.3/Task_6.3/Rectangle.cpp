@@ -6,10 +6,17 @@ FIGURE::Rectangle::Rectangle(int a, int b) : Parallelogram(a, b, 90, 90) { this-
 
 bool FIGURE::Rectangle::CheckFigure()
 {
-	if (Quadrangle::CheckFigure()) return true;
+	if (Quadrangle::CheckFigure() &&
+		this->Get_a() == this->Get_c() &&
+		this->Get_b() == this->Get_d() &&
+		this->Get_A() == 90 &&
+		this->Get_B() == 90 &&
+		this->Get_C() == 90 &&
+		this->Get_D() == 90) return true;
 
 	else return false;
 }
+
 
 void FIGURE::Rectangle::PrintInfo()
 {

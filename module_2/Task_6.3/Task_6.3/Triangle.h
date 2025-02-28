@@ -6,39 +6,22 @@ namespace FIGURE
 {
 	class Triangle : public Figure
 	{
+	private:
+		int a, b, c; //sides
+
 	public:
-		struct Sides
-		{
-		private:
-			int a, b, c;
+		int Get_a();
+		int Get_b();
+		int Get_c();
 
-		public:
-			int Get_a();
-			int Get_b();
-			int Get_c();
 
-			Sides(int a, int b, int c);
+	private:
+		int A, B, C; //angles
 
-			Sides();
-		};
-
-		struct Angles
-		{
-		private:
-			int A, B, C;
-
-		public:
-			int Get_A();
-			int Get_B();
-			int Get_C();
-
-			Angles(int A, int B, int C);
-
-			Angles();
-		};
-
-		Sides sides;
-		Angles angles;
+	public:
+		int Get_A();
+		int Get_B();
+		int Get_C();
 
 	public:
 		Triangle(int a, int b, int c, int A, int B, int C);

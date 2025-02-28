@@ -53,86 +53,58 @@ namespace FIGURE
 
 	class Triangle : public Figure
 	{
+	private:
+		int a, b, c; //sides
+
 	public:
-		struct Sides
-		{
-		private:
-			int a, b, c;
+		int Get_a() { return this->a; }
+		int Get_b() { return this->b; }
+		int Get_c() { return this->c; }
 
-		public:
-			int Get_a() { return this->a; }
 
-			int Get_b() { return this->b; }
+	private:
+		int A, B, C; //angles
 
-			int Get_c() { return this->c; }
+	public:
+		int Get_A() { return this->A; }
+		int Get_B() { return this->B; }
+		int Get_C() { return this->C; }
 
-			Sides(int a, int b, int c)
-			{
-				this->a = a;
-				this->b = b;
-				this->c = c;
-			};
-
-			Sides()
-			{
-				this->a = 0;
-				this->b = 0;
-				this->c = 0;
-			};
-		};
-
-		struct Angles
-		{
-		private:
-			int A, B, C;
-
-		public:
-			int Get_A() { return this->A; }
-
-			int Get_B() { return this->B; }
-
-			int Get_C() { return this->C; }
-
-			Angles(int A, int B, int C)
-			{
-				this->A = A;
-				this->B = B;
-				this->C = C;
-			};
-
-			Angles()
-			{
-				this->A = 0;
-				this->B = 0;
-				this->C = 0;
-			};
-		};
-
-		Sides sides;
-		Angles angles;
 
 	public:
 		Triangle(int a, int b, int c, int A, int B, int C) : Figure(3)
 		{
 			this->Name = "Треугольник";
 
-			sides = Sides(a, b, c);
-			angles = Angles(A, B, C);
+			this->a = a;
+			this->b = b;
+			this->c = c;
 
+			this->A = A;
+			this->B = B;
+			this->C = C;
 		};
 
 		Triangle() : Figure(3)
 		{
 			this->Name = "Треугольник";
+
+			this->a = 0;
+			this->b = 0;
+			this->c = 0;
+
+			this->A = 0;
+			this->B = 0;
+			this->C = 0;
 		};
 
 	public:
 		bool CheckFigure() override
 		{
-			if (this->sides.Get_a() == 0 ||
-				this->sides.Get_b() == 0 || 
-				this->sides.Get_c() == 0 || 
-				(this->angles.Get_A() + this->angles.Get_B() + this->angles.Get_C() != 180) )
+			if (this->Get_a() == 0 ||
+				this->Get_b() == 0 || 
+				this->Get_c() == 0 || 
+				(this->Get_A() + this->Get_B() + this->Get_C() != 180) )
 			{
 				return false;
 			}
@@ -147,14 +119,14 @@ namespace FIGURE
 			Figure::PrintInfo();
 
 			std::cout << "Стороны: ";
-			std::cout << "a = " << this->sides.Get_a() << ", ";
-			std::cout << "b = " << this->sides.Get_b() << ", ";
-			std::cout << "c = " << this->sides.Get_c() << std::endl;
+			std::cout << "a = " << this->Get_a() << ", ";
+			std::cout << "b = " << this->Get_b() << ", ";
+			std::cout << "c = " << this->Get_c() << std::endl;
 		
 			std::cout << "Углы: ";
-			std::cout << "A = " << this->angles.Get_A() << ", ";
-			std::cout << "B = " << this->angles.Get_B() << ", ";
-			std::cout << "C = " << this->angles.Get_C() << std::endl;
+			std::cout << "A = " << this->Get_A() << ", ";
+			std::cout << "B = " << this->Get_B() << ", ";
+			std::cout << "C = " << this->Get_C() << std::endl;
 		}
 	};
 
@@ -169,7 +141,7 @@ namespace FIGURE
 
 		bool CheckFigure() override
 		{
-			if (Triangle::CheckFigure() && this->angles.Get_C() == 90) return true;
+			if (Triangle::CheckFigure() && this->Get_C() == 90) return true;
 			
 			else return false;
 		}
@@ -191,7 +163,9 @@ namespace FIGURE
 
 		bool CheckFigure() override
 		{
-			if (Triangle::CheckFigure()) return true; //без иных условий, равенство a=c и A=C заложено в конструкторе
+			if (Triangle::CheckFigure()	&&
+				this->Get_a() == this->Get_c() &&
+				this->Get_A() == this->Get_C())		return true;
 
 			else return false;
 		}
@@ -213,7 +187,12 @@ namespace FIGURE
 
 		bool CheckFigure() override
 		{
-			if (Triangle::CheckFigure()) return true; //без иных условий, равенство сторон и углы по 60 заложены в конструкторе
+			if (Triangle::CheckFigure() &&
+				this->Get_a() == this->Get_b() &&
+				this->Get_c() == this->Get_a() &&
+				this->Get_A() == 60 &&
+				this->Get_B() == 60 &&
+				this->Get_C() == 60) return true;
 
 			else return false;
 		}
@@ -226,94 +205,62 @@ namespace FIGURE
 
 	class Quadrangle : public Figure
 	{
+	private:
+		int a, b, c, d;
+
 	public:
-		struct Sides
-		{
-		private:
-			int a, b, c, d;
+		int Get_a() { return this->a; }
+		int Get_b() { return this->b; }
+		int Get_c() { return this->c; }
+		int Get_d() { return this->d; }
 
-		public:
-			int Get_a() { return this->a; }
+	private:
+		int A, B, C, D;
 
-			int Get_b() { return this->b; }
+	public:
+		int Get_A() { return this->A; }
+		int Get_B() { return this->B; }
+		int Get_C() { return this->C; }
+		int Get_D() { return this->D; }
 
-			int Get_c() { return this->c; }
-
-			int Get_d() { return this->d; }
-
-			Sides(int a, int b, int c, int d)
-			{
-				this->a = a;
-				this->b = b;
-				this->c = c;
-				this->d = d;
-			};
-
-			Sides()
-			{
-				this->a = 0;
-				this->b = 0;
-				this->c = 0;
-				this->d = 0;
-			};
-		};
-
-		struct Angles
-		{
-		private:
-			int A, B, C, D;
-
-		public:
-			int Get_A() { return this->A; }
-
-			int Get_B() { return this->B; }
-
-			int Get_C() { return this->C; }
-
-			int Get_D() { return this->D; }
-
-			Angles(int A, int B, int C, int D)
-			{
-				this->A = A;
-				this->B = B;
-				this->C = C;
-				this->D = D;
-			};
-
-			Angles()
-			{
-				this->A = 0;
-				this->B = 0;
-				this->C = 0;
-				this->D = 0;
-			};
-		};
-
-		Sides sides;
-		Angles angles;
 
 	public:
 		Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D) : Figure(4)
 		{
 			this->Name = "Четырёхугольник";
 
-			sides = Sides(a, b, c, d);
-			angles = Angles(A, B, C, D);
+			this->a = a;
+			this->b = b;
+			this->c = c;
+			this->d = d;
 
+			this->A = A;
+			this->B = B;
+			this->C = C;
+			this->D = D;
 		};
 
 		Quadrangle() : Figure(4)
 		{
 			this->Name = "Четырёхугольник";
-		};
 
+			this->a = 0;
+			this->b = 0;
+			this->c = 0;
+			this->d = 0;
+
+			this->A = 0;
+			this->B = 0;
+			this->C = 0;
+			this->D = 0;
+		};
 		bool CheckFigure() override
 		{
-			if (this->sides.Get_a() == 0 ||
-				this->sides.Get_b() == 0 ||
-				this->sides.Get_c() == 0 ||
-				this->sides.Get_d() == 0 ||
-				(this->angles.Get_A() + this->angles.Get_B() + this->angles.Get_C() + this->angles.Get_D() != 360))
+			if (this->Get_a() == 0 ||
+				this->Get_b() == 0 ||
+				this->Get_c() == 0 ||
+				this->Get_d() == 0 ||
+				(this->Get_A() + this->Get_B() + this->Get_C() + this->Get_D() != 360))
 			{
 				return false;
 			}
@@ -328,16 +275,16 @@ namespace FIGURE
 			Figure::PrintInfo();
 
 			std::cout << "Стороны: ";
-			std::cout << "a = " << this->sides.Get_a() << ", ";
-			std::cout << "b = " << this->sides.Get_b() << ", ";
-			std::cout << "c = " << this->sides.Get_c() << ", ";
-			std::cout << "d = " << this->sides.Get_d() << std::endl;
+			std::cout << "a = " << this->Get_a() << ", ";
+			std::cout << "b = " << this->Get_b() << ", ";
+			std::cout << "c = " << this->Get_c() << ", ";
+			std::cout << "d = " << this->Get_d() << std::endl;
 
 			std::cout << "Углы: ";
-			std::cout << "A = " << this->angles.Get_A() << ", ";
-			std::cout << "B = " << this->angles.Get_B() << ", ";
-			std::cout << "C = " << this->angles.Get_C() << ", ";
-			std::cout << "D = " << this->angles.Get_D() << std::endl;
+			std::cout << "A = " << this->Get_A() << ", ";
+			std::cout << "B = " << this->Get_B() << ", ";
+			std::cout << "C = " << this->Get_C() << ", ";
+			std::cout << "D = " << this->Get_D() << std::endl;
 		}
 
 	};
@@ -353,7 +300,11 @@ namespace FIGURE
 
 		bool CheckFigure() override
 		{
-			if (Quadrangle::CheckFigure()) return true; //попарное равенство сторон и углов заложено в конструкторе
+			if (Quadrangle::CheckFigure() && 
+				this->Get_a() == this->Get_c() && 
+				this->Get_b() == this->Get_d() &&
+				this->Get_A() == this->Get_C() &&
+				this->Get_B() == this->Get_D()) return true;
 
 			else return false;
 		}
@@ -375,7 +326,12 @@ namespace FIGURE
 
 		bool CheckFigure() override
 		{
-			if (Quadrangle::CheckFigure()) return true; //равенство сторон и попарное равенство углов заложено в конструкторе
+			if (Quadrangle::CheckFigure() &&
+				this->Get_a() == this->Get_b() &&
+				this->Get_c() == this->Get_d() &&
+				this->Get_a() == this->Get_c() &&
+				this->Get_A() == this->Get_C() &&
+				this->Get_B() == this->Get_D()) return true;
 
 			else return false;
 		}
@@ -397,7 +353,13 @@ namespace FIGURE
 
 		bool CheckFigure() override
 		{
-			if (Quadrangle::CheckFigure()) return true;
+			if (Quadrangle::CheckFigure() &&
+				this->Get_a() == this->Get_c() &&
+				this->Get_b() == this->Get_d() &&
+				this->Get_A() == 90 &&
+				this->Get_B() == 90 &&
+				this->Get_C() == 90 &&
+				this->Get_D() == 90) return true;
 
 			else return false;
 		}
@@ -419,7 +381,15 @@ namespace FIGURE
 
 		bool CheckFigure() override
 		{
-			if (Quadrangle::CheckFigure()) return true; //равенство сторон и попарное равенство углов заложено в конструкторе
+			if (Quadrangle::CheckFigure() &&
+				this->Get_a() == this->Get_b() &&
+				this->Get_c() == this->Get_d() &&
+				this->Get_a() == this->Get_c() &&
+				this->Get_A() == this->Get_C() &&
+				this->Get_A() == 90 && 
+				this->Get_B() == 90 &&
+				this->Get_C() == 90 &&
+				this->Get_D() == 90) return true;
 
 			else return false;
 		}
@@ -487,7 +457,7 @@ int main()
 	p_parallelogram->PrintInfo();
 
 
-	Rhomb rhomb(20, 150, 20);
+	Rhomb rhomb(20, 150, 30);
 
 	Quadrangle* p_rhomb = &rhomb;
 

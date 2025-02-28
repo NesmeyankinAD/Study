@@ -7,7 +7,12 @@ FIGURE::EquilateralTriangle::EquilateralTriangle(int a) : IsoscelesTriangle(a, a
 
 bool FIGURE::EquilateralTriangle::CheckFigure()
 {
-	if (Triangle::CheckFigure()) return true; //без иных условий, равенство сторон и углы по 60 заложены в конструкторе
+	if (Triangle::CheckFigure() &&
+		this->Get_a() == this->Get_b() &&
+		this->Get_c() == this->Get_a() &&
+		this->Get_A() == 60 &&
+		this->Get_B() == 60 &&
+		this->Get_C() == 60) return true;
 
 	else return false;
 }

@@ -7,7 +7,9 @@ FIGURE::IsoscelesTriangle::IsoscelesTriangle(int a, int b, int A, int B) : Trian
 
 bool FIGURE::IsoscelesTriangle::CheckFigure()
 {
-	if (Triangle::CheckFigure()) return true; //без иных условий, равенство a=c и A=C заложено в конструкторе
+	if (Triangle::CheckFigure() &&
+		this->Get_a() == this->Get_c() &&
+		this->Get_A() == this->Get_C())		return true;
 
 	else return false;
 }

@@ -33,96 +33,76 @@ namespace FIGURE
 		{
 			return this->Name;
 		}
+
+		virtual void print()
+		{
+			std::cout << this->GetName() << std::endl;
+			std::cout << "Количество сторон: " << this->GetQuantitySides() << std::endl;
+		}
 	};
 
 	class Triangle : public Figure
-	{
+	{		
+	private:
+		int a, b, c; //sides
+
 	public:
-		struct Sides
-		{
-		private:
-			int a, b, c;
+		int Get_a() { return this->a; }
+		int Get_b() { return this->b; }
+		int Get_c() { return this->c; }
 
-		public:
-			int Get_a() { return this->a; }
 
-			int Get_b() { return this->b; }
+	private:
+		int A, B, C; //angles
 
-			int Get_c() { return this->c; }
+	public:
+		int Get_A() { return this->A; }
+		int Get_B() { return this->B; }
+		int Get_C() { return this->C; }
 
-			Sides(int a, int b, int c)
-			{
-				this->a = a;
-				this->b = b;
-				this->c = c;
-			};
-
-			Sides()
-			{
-				this->a = 0;
-				this->b = 0;
-				this->c = 0;
-			};
-		};
-
-		struct Angles
-		{
-		private:
-			int A, B, C;
-
-		public:
-			int Get_A() { return this->A; }
-
-			int Get_B() { return this->B; }
-
-			int Get_C() { return this->C; }
-
-			Angles(int A, int B, int C)
-			{
-				this->A = A;
-				this->B = B;
-				this->C = C;
-			};
-
-			Angles()
-			{
-				this->A = 0;
-				this->B = 0;
-				this->C = 0;
-			};
-		};
-
-		Sides sides;
-		Angles angles;
 
 	public:
 		Triangle(int a, int b, int c, int A, int B, int C) : Figure(3)
 		{
 			this->Name = "Треугольник";
 
-			sides = Sides(a, b, c);
-			angles = Angles(A, B, C);
+			this->a = a;
+			this->b = b;
+			this->c = c;
 
+			this->A = A;
+			this->B = B;
+			this->C = C;
 		};
 
 		Triangle() : Figure(3)
 		{
 			this->Name = "Треугольник";
+
+			this->a = 0;
+			this->b = 0;
+			this->c = 0;
+					  
+			this->A = 0;
+			this->B = 0;
+			this->C = 0;
 		};
 
-	public:
-		//virtual void PrintInfo()
-		//{
-		//	std::cout << this->Name << std::endl;
-		//
-		//	std::cout << "a = " << this->sides.Get_a() << ", ";
-		//	std::cout << "b = " << this->sides.Get_b() << ", ";
-		//	std::cout << "c = " << this->sides.Get_c() << std::endl;
-		//
-		//	std::cout << "A = " << this->angles.Get_A() << ", ";
-		//	std::cout << "B = " << this->angles.Get_B() << ", ";
-		//	std::cout << "C = " << this->angles.Get_C() << std::endl;
-		//}
+		void print() override 
+		{
+			std::cout << this->GetName() << std::endl;
+
+			std::cout << "Стороны: ";
+			std::cout << "a = " << this->Get_a() << ", ";
+			std::cout << "b = " << this->Get_b() << ", ";
+			std::cout << "c = " << this->Get_c() << std::endl;
+								   
+			std::cout << "Углы: "; 
+			std::cout << "A = " << this->Get_A() << ", ";
+			std::cout << "B = " << this->Get_B() << ", ";
+			std::cout << "C = " << this->Get_C() << std::endl;
+			std::cout << std::endl;
+		}
 	};
 
 	class RightAngledTriangle : public Triangle
@@ -158,87 +138,73 @@ namespace FIGURE
 
 	class Quadrangle : public Figure
 	{
+	private:
+		int a, b, c, d;
+
 	public:
-		struct Sides
-		{
-		private:
-			int a, b, c, d;
+		int Get_a() { return this->a; }
+		int Get_b() { return this->b; }
+		int Get_c() { return this->c; }
+		int Get_d() { return this->d; }
+		
+	private:
+		int A, B, C, D;
 
-		public:
-			int Get_a() { return this->a; }
+	public:
+		int Get_A() { return this->A; }
+		int Get_B() { return this->B; }
+		int Get_C() { return this->C; }
+		int Get_D() { return this->D; }
 
-			int Get_b() { return this->b; }
-
-			int Get_c() { return this->c; }
-
-			int Get_d() { return this->d; }
-
-			Sides(int a, int b, int c, int d)
-			{
-				this->a = a;
-				this->b = b;
-				this->c = c;
-				this->d = d;
-			};
-
-			Sides()
-			{
-				this->a = 0;
-				this->b = 0;
-				this->c = 0;
-				this->d = 0;
-			};
-		};
-
-		struct Angles
-		{
-		private:
-			int A, B, C, D;
-
-		public:
-			int Get_A() { return this->A; }
-
-			int Get_B() { return this->B; }
-
-			int Get_C() { return this->C; }
-
-			int Get_D() { return this->D; }
-
-			Angles(int A, int B, int C, int D)
-			{
-				this->A = A;
-				this->B = B;
-				this->C = C;
-				this->D = D;
-			};
-
-			Angles()
-			{
-				this->A = 0;
-				this->B = 0;
-				this->C = 0;
-				this->D = 0;
-			};
-		};
-
-		Sides sides;
-		Angles angles;
 
 	public:
 		Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D) : Figure(4)
 		{
 			this->Name = "Четырёхугольник";
 
-			sides = Sides(a, b, c, d);
-			angles = Angles(A, B, C, D);
+			this->a = a;
+			this->b = b;
+			this->c = c;
+			this->d = d;
 
+			this->A = A;
+			this->B = B;
+			this->C = C;
+			this->D = D;
 		};
 
 		Quadrangle() : Figure(4)
 		{
 			this->Name = "Четырёхугольник";
+
+			this->a = 0;
+			this->b = 0;
+			this->c = 0;
+			this->d = 0;
+					  
+			this->A = 0;
+			this->B = 0;
+			this->C = 0;
+			this->D = 0;
 		};
 
+		void print() override
+		{
+			std::cout << this->GetName() << std::endl;
+
+			std::cout << "Стороны: ";
+			std::cout << "a = " << this->Get_a() << ", ";
+			std::cout << "b = " << this->Get_b() << ", ";
+			std::cout << "c = " << this->Get_c() << ", ";
+			std::cout << "d = " << this->Get_d() << std::endl;
+								   
+			std::cout << "Углы: "; 
+			std::cout << "A = " << this->Get_A() << ", ";
+			std::cout << "B = " << this->Get_B() << ", ";
+			std::cout << "C = " << this->Get_C() << ", ";
+			std::cout << "C = " << this->Get_D() << std::endl;
+			std::cout << std::endl;
+		}
 	};
 
 	class Parallelogram : public Quadrangle
@@ -281,39 +247,9 @@ namespace FIGURE
 		Square(int a) : Rectangle(a, a) { this->Name = "Квадрат"; };
 	};
 
-
-	void PrintInfoTriangle(Triangle* triangle)
+	void print_info(Figure* p)
 	{
-		std::cout << triangle->GetName() << std::endl;
-
-		std::cout << "Стороны: ";
-		std::cout << "a = " << triangle->sides.Get_a() << ", ";
-		std::cout << "b = " << triangle->sides.Get_b() << ", ";
-		std::cout << "c = " << triangle->sides.Get_c() << std::endl;
-
-		std::cout << "Углы: ";
-		std::cout << "A = " << triangle->angles.Get_A() << ", ";
-		std::cout << "B = " << triangle->angles.Get_B() << ", ";
-		std::cout << "C = " << triangle->angles.Get_C() << std::endl;
-		std::cout << std::endl;
-	}
-
-	void PrintInfoQuadrangle(Quadrangle* quadrangle)
-	{
-		std::cout << quadrangle->GetName() << std::endl;
-
-		std::cout << "Стороны: ";
-		std::cout << "a = " << quadrangle->sides.Get_a() << ", ";
-		std::cout << "b = " << quadrangle->sides.Get_b() << ", ";
-		std::cout << "c = " << quadrangle->sides.Get_c() << ", ";
-		std::cout << "d = " << quadrangle->sides.Get_d() << std::endl;
-
-		std::cout << "Углы: ";
-		std::cout << "A = " << quadrangle->angles.Get_A() << ", ";
-		std::cout << "B = " << quadrangle->angles.Get_B() << ", ";
-		std::cout << "C = " << quadrangle->angles.Get_C() << ", ";
-		std::cout << "C = " << quadrangle->angles.Get_D() << std::endl;
-		std::cout << std::endl;
+		p->print();
 	}
 }
 
@@ -329,63 +265,63 @@ int main()
 	
 	Triangle* p_triangle = &triangle;	//создаём указатель на базовый класс = ссылка на экземпляр
 
-	PrintInfoTriangle(p_triangle);		//передаём в функцию указатель на базовый класс экземпляра
+	print_info(p_triangle);		//передаём в функцию указатель на базовый класс экземпляра
 
 
 	RightAngledTriangle right_angled_triangle(1, 2, 3, 50, 60); 
 	
 	Triangle* p_right_angled_triangle = &right_angled_triangle;	
 
-	PrintInfoTriangle(p_right_angled_triangle);					
+	print_info(p_right_angled_triangle);
 
 
 	IsoscelesTriangle isosceles_triangle(20, 10, 75, 30);		
 	
 	Triangle* p_isosceles_triangle = &isosceles_triangle;		
 
-	PrintInfoTriangle(p_isosceles_triangle);					
+	print_info(p_isosceles_triangle);
 
 
 	EquilateralTriangle equilateral_triangle(20);
 
 	Triangle* p_equilateral_triangle = &equilateral_triangle;
 
-	PrintInfoTriangle(p_equilateral_triangle);
+	print_info(p_equilateral_triangle);
 
 
 	Quadrangle quadrangle(1, 2, 3, 4, 50, 60, 110, 80);
 
 	Quadrangle* p_quadrangle = &quadrangle;
 
-	PrintInfoQuadrangle(p_quadrangle);
+	print_info(p_quadrangle);
 
 
 	Parallelogram parallelogram(10, 30, 120, 60);
 
 	Quadrangle* p_parallelogram = &parallelogram;
 
-	PrintInfoQuadrangle(p_parallelogram);
+	print_info(p_parallelogram);
 
 
 	Rhomb rhomb(20, 150, 30);
 
 	Quadrangle* p_rhomb = &rhomb;
 
-	PrintInfoQuadrangle(p_rhomb);
+	print_info(p_rhomb);
 
 
 	FIGURE::Rectangle rectangle(10, 20); //существует некая функция Rectangle - конфликт имён
 
 	Quadrangle* p_rectangle = &rectangle;
 
-	PrintInfoQuadrangle(p_rectangle);
+	print_info(p_rectangle);
 
 
 	Square square(5);
 
 	Quadrangle* p_square = &square;
 
-	PrintInfoQuadrangle(p_square);
+	print_info(p_square);
 
 
 

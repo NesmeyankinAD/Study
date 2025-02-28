@@ -6,7 +6,7 @@ FIGURE::RightAngledTriangle::RightAngledTriangle(int a, int b, int c, int A, int
 
 bool FIGURE::RightAngledTriangle::CheckFigure()
 {
-	if (Triangle::CheckFigure() && this->angles.Get_C() == 90) return true;
+	if (Triangle::CheckFigure() && this->Get_C() == 90) return true;
 
 	else return false;
 }
