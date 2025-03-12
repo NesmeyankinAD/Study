@@ -1,0 +1,4 @@
+C:/Users/mrsas/Desktop/Cpp_Folder_0/module_2/Libraries/Figures/out/build/x64-Debug/CMakeFiles/figures_DLL.dir
+C:/Users/mrsas/Desktop/Cpp_Folder_0/module_2/Libraries/Figures/out/build/x64-Debug/CMakeFiles/figures_client.dir
+C:/Users/mrsas/Desktop/Cpp_Folder_0/module_2/Libraries/Figures/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/mrsas/Desktop/Cpp_Folder_0/module_2/Libraries/Figures/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

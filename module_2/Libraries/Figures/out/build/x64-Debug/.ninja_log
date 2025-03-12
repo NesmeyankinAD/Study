@@ -1,0 +1,18 @@
+# ninja log v5
+34	779	7635078209139314	CMakeFiles/figures_DLL.dir/Square.cpp.obj	b843ff2c6e5a3197
+6	780	7635078209139314	CMakeFiles/figures_DLL.dir/Triangle.cpp.obj	6e6f2a6f557c485f
+26	790	7635078209297143	CMakeFiles/figures_DLL.dir/Rectangle.cpp.obj	d2d9ce11b523cb7d
+9	307	7635079361091079	figures_DLL.lib	5247fcb16ca1d628
+1	799	7635078209386667	CMakeFiles/figures_DLL.dir/FigureException.cpp.obj	207dabb58bd9879c
+19	787	7635078209297143	CMakeFiles/figures_DLL.dir/RightAngledTriangle.cpp.obj	dae8cf35181c7f8
+4	804	7635078209531231	CMakeFiles/figures_DLL.dir/Figure.cpp.obj	7b6f2ce7b1c24448
+13	803	7635078209471064	CMakeFiles/figures_DLL.dir/EquilateralTriangle.cpp.obj	b4ae4da34493e807
+23	805	7635078209507075	CMakeFiles/figures_DLL.dir/Parallelogram.cpp.obj	adfb66b6029c26bb
+16	809	7635078209616292	CMakeFiles/figures_DLL.dir/IsoscelesTriangle.cpp.obj	c52f307700a2dbd0
+30	812	7635078209629305	CMakeFiles/figures_DLL.dir/Rhomb.cpp.obj	efc62885dd72b95d
+9	820	7635078209629305	CMakeFiles/figures_DLL.dir/Quadrangle.cpp.obj	631fa9e5101ce4f6
+9	307	7635079361091079	figures_DLL.dll	5247fcb16ca1d628
+18	547	7635079363708477	CMakeFiles/figures_client.dir/Figures.cpp.obj	8a984f977e506d71
+548	775	7635079365920991	figures_client.exe	1649b4d8a675cf88
+3	748	7635086361149151	CMakeFiles/figures_client.dir/Figures.cpp.obj	8a984f977e506d71
+749	864	7635086362098151	figures_client.exe	1649b4d8a675cf88

@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Leaver_prj",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LeaverDLL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeaverDLL-Debug-be09858bc3bd8b8f7cc7.json",
+					"name" : "LeaverDLL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Leaver_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Leaver_client-Debug-c161afe07f04b4336551.json",
+					"name" : "Leaver_client",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/mrsas/Desktop/Cpp_Folder_0/module_2/Libraries/LeaverDLL/out/build/x64-Debug",
+		"source" : "C:/Users/mrsas/Desktop/Cpp_Folder_0/module_2/Libraries/LeaverDLL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
