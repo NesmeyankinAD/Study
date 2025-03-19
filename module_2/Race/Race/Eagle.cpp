@@ -5,7 +5,7 @@ using namespace vehicles;
 
 Eagle::Eagle() : AirVehicle("Орёл", 8) {};
 
-void Eagle::FinishTime(float distance)
+float Eagle::FinishTime(float distance)
 {
-	//вычисление времени
+	return ((1 - 0.06) * distance) / this->speed;
 }

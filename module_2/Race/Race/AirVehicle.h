@@ -9,5 +9,6 @@ namespace vehicles
 	public:
 		AirVehicle(std::string name, float speed);
 
+		float FinishTime(float distance) override;
 	};
 }

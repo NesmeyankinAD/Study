@@ -24,9 +24,8 @@ namespace vehicles
 
 	private:
 		std::string name_str;
-
+	protected:
 		float speed{0};
-		float finish_time{0};
 
 	protected:
 		Vehicle();
@@ -34,7 +33,7 @@ namespace vehicles
 		Vehicle(TypeOfVehicle type, std::string name, float speed);
 
 	public:
-		virtual void FinishTime(float distance);
+		virtual float FinishTime(float distance);
 
 		std::string get_name();
 	};

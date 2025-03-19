@@ -9,6 +9,6 @@ namespace vehicles
 	public:
 		MagicCarpet();
 
-		void FinishTime(float distance) override;
+		float FinishTime(float distance) override;
 	};
 }

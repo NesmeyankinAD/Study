@@ -14,6 +14,6 @@ namespace vehicles
 	public:
 		FastCamel();
 
-		void FinishTime(float distance) override;
+		float FinishTime(float distance) override;
 	};
 }

@@ -17,9 +17,9 @@ Vehicle::Vehicle(TypeOfVehicle type, std::string name, float speed)
 	this->speed = speed;
 }
 
-void Vehicle::FinishTime(float distance)
+float Vehicle::FinishTime(float distance)
 {
-	this->finish_time = 0;
+	return 0.0;
 }
 
 std::string Vehicle::get_name()

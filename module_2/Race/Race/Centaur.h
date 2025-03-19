@@ -12,6 +12,6 @@ namespace vehicles
 	public:
 		Centaur();
 
-		void FinishTime(float distance) override;
+		float FinishTime(float distance) override;
 	};
 }

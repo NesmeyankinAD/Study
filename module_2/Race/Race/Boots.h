@@ -13,6 +13,6 @@ namespace vehicles
 	public:
 		Boots();
 
-		void FinishTime(float distance) override;
+		float FinishTime(float distance) override;
 	};
 }

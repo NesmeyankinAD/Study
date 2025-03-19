@@ -9,7 +9,7 @@ namespace vehicles
 	public:
 		Broom();
 
-		void FinishTime(float distance) override;
+		float FinishTime(float distance) override;
 	};
 }
 
