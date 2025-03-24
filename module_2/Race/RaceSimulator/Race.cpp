@@ -1,21 +1,9 @@
 ﻿#include<iostream>
 #include<Windows.h>
 
-//#include"Vehicle.h"
-//#include"GroundVehicle.h"
-//#include"AirVehicle.h"
-//#include"Camel.h"
-//#include"FastCamel.h"
-//#include"Centaur.h"
-//#include"Boots.h"
-//#include"MagicCarpet.h"
-//#include"Eagle.h"
-//#include"Broom.h"
-
 #include"VehiclesEnvironment.h"
 
 using namespace vehicles;
-
 
 int main()
 {
@@ -37,6 +25,7 @@ int main()
 		std::cout << "Выберите тип гонки: ";
 
 		std::cin >> race_type;
+		std::cout << std::endl;
 
 		bool right_race_distance{ 0 };
 		while (!right_race_distance)
@@ -46,6 +35,7 @@ int main()
 			if (race_distance <= 0) std::cout << "Дистанция должна быть положительна!" << std::endl;
 			else right_race_distance = true;
 		}
+		std::cout << std::endl;
 
 
 		int vehicle_count{ 0 }; //переменная, изменяемая функцией registration
@@ -82,10 +72,11 @@ int main()
 				std::cout << std::endl;
 				std::cout << "1. Провести ещё одну гонку." << std::endl;
 				std::cout << "2. Выйти." << std::endl;
-				std::cout << "Выберите действие: " << std::endl;
+				std::cout << "Выберите действие: ";
 
 				action_choise = 0;
 				std::cin >> action_choise;
+				std::cout << std::endl;
 
 				if		(action_choise == 1) { break; }
 				else if (action_choise == 2)

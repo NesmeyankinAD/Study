@@ -1,0 +1,18 @@
+# ninja log v5
+15	393	7645454364633091	CMakeFiles/VehiclesEnvironment.dir/Boots.cpp.obj	48ca9529f6798273
+4	400	7645454364653108	CMakeFiles/VehiclesEnvironment.dir/GroundVehicle.cpp.obj	64e166b07c7e1939
+10	400	7645454364872103	CMakeFiles/VehiclesEnvironment.dir/Camel.cpp.obj	8b7b54223c54d5b6
+1	405	7645454364643101	CMakeFiles/VehiclesEnvironment.dir/Vehicle.cpp.obj	62ef07c0092af885
+26	406	7645454364673105	CMakeFiles/VehiclesEnvironment.dir/Broom.cpp.obj	63d7cd3bba36e36a
+17	406	7645454364768018	CMakeFiles/VehiclesEnvironment.dir/Centaur.cpp.obj	c0587acc862d5d27
+12	408	7645454364895375	CMakeFiles/VehiclesEnvironment.dir/FastCamel.cpp.obj	996af08f9f87b64f
+7	413	7645454364979506	CMakeFiles/VehiclesEnvironment.dir/AirVehicle.cpp.obj	a420bfacf30fbc06
+20	419	7645454365108880	CMakeFiles/VehiclesEnvironment.dir/MagicCarpet.cpp.obj	adc46e76e8058ade
+23	480	7645454365722736	CMakeFiles/VehiclesEnvironment.dir/Eagle.cpp.obj	ce01232abfb8f546
+28	619	7645454367119667	CMakeFiles/VehiclesEnvironment.dir/VehiclesEnvironment.cpp.obj	30f6f394cea160cd
+32	881	7645454369723595	CMakeFiles/race_client.dir/Race.cpp.obj	3b2a46ec9d09341b
+619	978	7645454370536242	VehiclesEnvironment.dll	92b1eca134deaab8
+619	978	7645454370536242	VehiclesEnvironment.lib	92b1eca134deaab8
+978	1200	7645454372765037	race_client.exe	de5f0deddd99e7cc
+28	533	7645456625883548	CMakeFiles/race_client.dir/Race.cpp.obj	3b2a46ec9d09341b
+534	662	7645456626884390	race_client.exe	de5f0deddd99e7cc

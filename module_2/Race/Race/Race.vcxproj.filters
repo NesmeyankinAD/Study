@@ -51,6 +51,9 @@
     <ClCompile Include="Broom.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="VehiclesEnvironment.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vehicle.h">
@@ -78,6 +81,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Broom.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="VehiclesEnvironment.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

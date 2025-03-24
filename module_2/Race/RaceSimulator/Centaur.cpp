@@ -1,11 +1,11 @@
-#include"FastCamel.h"
+#include"Centaur.h"
 
 using namespace vehicles;
 
 
-vehicles::FastCamel::FastCamel() : GroundVehicle("Верблюд-быстроход", 40, 10) {};
+Centaur::Centaur() : GroundVehicle("Кентавр", 15, 8) {};
 
-float vehicles::FastCamel::FinishTime(float distance)
+float Centaur::FinishTime(float distance)
 {
 	float temp_finish_time{ 0 };
 
@@ -19,9 +19,7 @@ float vehicles::FastCamel::FinishTime(float distance)
 		{
 			if (temp_finish_time == travel_time) break;
 
-			if		(i == 1) temp_finish_time += this->first_rest_time;
-			else if (i == 2) temp_finish_time += this->second_rest_time;
-			else			 temp_finish_time += this->other_rest_time;
+			temp_finish_time += this->rest_time;
 		}
 	}
 
