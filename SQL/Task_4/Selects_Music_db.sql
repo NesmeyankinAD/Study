@@ -78,17 +78,20 @@ FROM performer_name, album, performers_albums
 WHERE 		performers_albums.performer = performer_name.id_performer_name 
 		AND performers_albums.album = album.id_album; 
 	
-
-SELECT performer_name.first_name AS performer
+	--исполнители, которые не выпустили альбомы в 2020 году
+SELECT DISTINCT performer_name.first_name AS performer
 FROM performer_name, album, performers_albums
 WHERE 		performers_albums.performer = performer_name.id_performer_name 
 		AND performers_albums.album = album.id_album
 		AND album.release_year NOT BETWEEN '2020-01-01' AND '2021-01-01'; 	
 
---доделать-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--Названия сборников, в которых присутствует конкретный исполнитель (Исполнитель6 Фамилия6).
 
-
---Названия сборников, в которых присутствует конкретный исполнитель (выберите его сами).
-
-SELECT musical_compilation.name 
-FROM 
+SELECT DISTINCT compilation_name.name 
+FROM musical_compilation 
+	JOIN compilation_name ON musical_compilation.name = compilation_name.id_compilation_name  
+	JOIN musical_track ON musical_compilation.musical_track = musical_track.id_musical_track
+	JOIN performers_albums ON musical_track.album = performers_albums.album
+	JOIN performer_name ON performers_albums.performer = performer_name.id_performer_name
+WHERE performer_name.first_name = 'Исполнитель6' AND performer_name.last_name = 'Фамилия6';
