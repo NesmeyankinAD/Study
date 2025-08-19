@@ -2586,3 +2586,604 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:2 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_ASSUME"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d23b3
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_d23b3.dir\\PQXX_HAVE_ASSUME.cxx.obj /FdCMakeFiles\\cmTC_d23b3.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_ASSUME.cxx
+        FAILED: CMakeFiles/cmTC_d23b3.dir/PQXX_HAVE_ASSUME.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_d23b3.dir\\PQXX_HAVE_ASSUME.cxx.obj /FdCMakeFiles\\cmTC_d23b3.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_ASSUME.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_ASSUME.cxx(2): fatal error C1189: #error:  "No support for [[assume]] attribute."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:6 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CHARCONV_FLOAT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8df4d
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_8df4d.dir\\PQXX_HAVE_CHARCONV_FLOAT.cxx.obj /FdCMakeFiles\\cmTC_8df4d.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CHARCONV_FLOAT.cxx
+        FAILED: CMakeFiles/cmTC_8df4d.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_8df4d.dir\\PQXX_HAVE_CHARCONV_FLOAT.cxx.obj /FdCMakeFiles\\cmTC_8df4d.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CHARCONV_FLOAT.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CHARCONV_FLOAT.cxx(15): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "and"
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:10 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CHARCONV_INT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4c29a
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_4c29a.dir\\PQXX_HAVE_CHARCONV_INT.cxx.obj /FdCMakeFiles\\cmTC_4c29a.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CHARCONV_INT.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4c29a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4c29a.dir\\PQXX_HAVE_CHARCONV_INT.cxx.obj  /out:cmTC_4c29a.exe /implib:cmTC_4c29a.lib /pdb:cmTC_4c29a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:14 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CMP"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4228c
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_4228c.dir\\PQXX_HAVE_CMP.cxx.obj /FdCMakeFiles\\cmTC_4228c.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CMP.cxx
+        FAILED: CMakeFiles/cmTC_4228c.dir/PQXX_HAVE_CMP.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_4228c.dir\\PQXX_HAVE_CMP.cxx.obj /FdCMakeFiles\\cmTC_4228c.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CMP.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C2039: "cmp_greater": не является членом "std".
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\utility(37): note:  см. объявление "std"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C3861: cmp_greater: идентификатор не найден
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C2039: "cmp_less_equal": не является членом "std".
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\utility(37): note:  см. объявление "std"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CMP.cxx(8): error C3861: cmp_less_equal: идентификатор не найден
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:18 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CONCEPTS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_57494
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_57494.dir\\PQXX_HAVE_CONCEPTS.cxx.obj /FdCMakeFiles\\cmTC_57494.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CONCEPTS.cxx
+        FAILED: CMakeFiles/cmTC_57494.dir/PQXX_HAVE_CONCEPTS.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_57494.dir\\PQXX_HAVE_CONCEPTS.cxx.obj /FdCMakeFiles\\cmTC_57494.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CONCEPTS.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CONCEPTS.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_CONCEPTS: __cpp_concepts is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:22 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CXA_DEMANGLE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_cb79e
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_cb79e.dir\\PQXX_HAVE_CXA_DEMANGLE.cxx.obj /FdCMakeFiles\\cmTC_cb79e.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CXA_DEMANGLE.cxx
+        FAILED: CMakeFiles/cmTC_cb79e.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_cb79e.dir\\PQXX_HAVE_CXA_DEMANGLE.cxx.obj /FdCMakeFiles\\cmTC_cb79e.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CXA_DEMANGLE.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_CXA_DEMANGLE.cxx(7): fatal error C1083: Не удается открыть файл включение: cxxabi.h: No such file or directory,
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:26 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_GCC_PURE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_990f0
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_990f0.dir\\PQXX_HAVE_GCC_PURE.cxx.obj /FdCMakeFiles\\cmTC_990f0.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx
+        FAILED: CMakeFiles/cmTC_990f0.dir/PQXX_HAVE_GCC_PURE.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_990f0.dir\\PQXX_HAVE_GCC_PURE.cxx.obj /FdCMakeFiles\\cmTC_990f0.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(2): error C2065: pure: необъявленный идентификатор
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "f"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(2): error C2059: синтаксическая ошибка: )
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(3): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(3): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_PURE.cxx(9): error C3861: f: идентификатор не найден
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:30 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_GCC_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_99070
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_99070.dir\\PQXX_HAVE_GCC_VISIBILITY.cxx.obj /FdCMakeFiles\\cmTC_99070.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx
+        FAILED: CMakeFiles/cmTC_99070.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_99070.dir\\PQXX_HAVE_GCC_VISIBILITY.cxx.obj /FdCMakeFiles\\cmTC_99070.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2143: синтаксическая ошибка: отсутствие ")" перед "("
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2079: "visibility" использует не имеющую определения структуру struct "__attribute__"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2440: инициализация: невозможно преобразовать "const char [7]" в "int"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): note: Не существует контекста, в котором такое преобразование возможно
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2059: синтаксическая ошибка: )
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2059: синтаксическая ошибка: )
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "D"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(3): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(10): error C2065: D: необъявленный идентификатор
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "d"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(10): error C2065: d: необъявленный идентификатор
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_GCC_VISIBILITY.cxx(11): error C2065: d: необъявленный идентификатор
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:34 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_LIKELY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8251d
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_8251d.dir\\PQXX_HAVE_LIKELY.cxx.obj /FdCMakeFiles\\cmTC_8251d.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_LIKELY.cxx
+        FAILED: CMakeFiles/cmTC_8251d.dir/PQXX_HAVE_LIKELY.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_8251d.dir\\PQXX_HAVE_LIKELY.cxx.obj /FdCMakeFiles\\cmTC_8251d.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_LIKELY.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_LIKELY.cxx(5): fatal error C1189: #error:  "No support for [[likely]] / [[unlikely]] attributes."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:38 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_MULTIDIM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_290a0
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_290a0.dir\\PQXX_HAVE_MULTIDIM.cxx.obj /FdCMakeFiles\\cmTC_290a0.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_MULTIDIM.cxx
+        FAILED: CMakeFiles/cmTC_290a0.dir/PQXX_HAVE_MULTIDIM.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_290a0.dir\\PQXX_HAVE_MULTIDIM.cxx.obj /FdCMakeFiles\\cmTC_290a0.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_MULTIDIM.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_MULTIDIM.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:42 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_PATH"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_70543
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_70543.dir\\PQXX_HAVE_PATH.cxx.obj /FdCMakeFiles\\cmTC_70543.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_PATH.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_70543.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_70543.dir\\PQXX_HAVE_PATH.cxx.obj  /out:cmTC_70543.exe /implib:cmTC_70543.lib /pdb:cmTC_70543.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:46 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_POLL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_14886
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_14886.dir\\PQXX_HAVE_POLL.cxx.obj /FdCMakeFiles\\cmTC_14886.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_POLL.cxx
+        FAILED: CMakeFiles/cmTC_14886.dir/PQXX_HAVE_POLL.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_14886.dir\\PQXX_HAVE_POLL.cxx.obj /FdCMakeFiles\\cmTC_14886.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_POLL.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_POLL.cxx(2): fatal error C1083: Не удается открыть файл включение: poll.h: No such file or directory,
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:50 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SLEEP_FOR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_162b3
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_162b3.dir\\PQXX_HAVE_SLEEP_FOR.cxx.obj /FdCMakeFiles\\cmTC_162b3.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SLEEP_FOR.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_162b3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_162b3.dir\\PQXX_HAVE_SLEEP_FOR.cxx.obj  /out:cmTC_162b3.exe /implib:cmTC_162b3.lib /pdb:cmTC_162b3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:54 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SOURCE_LOCATION"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ae296
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_ae296.dir\\PQXX_HAVE_SOURCE_LOCATION.cxx.obj /FdCMakeFiles\\cmTC_ae296.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SOURCE_LOCATION.cxx
+        FAILED: CMakeFiles/cmTC_ae296.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_ae296.dir\\PQXX_HAVE_SOURCE_LOCATION.cxx.obj /FdCMakeFiles\\cmTC_ae296.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SOURCE_LOCATION.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SOURCE_LOCATION.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_SOURCE_LOCATION: __cpp_lib_source_location is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:58 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SPAN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5fb36
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_5fb36.dir\\PQXX_HAVE_SPAN.cxx.obj /FdCMakeFiles\\cmTC_5fb36.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SPAN.cxx
+        FAILED: CMakeFiles/cmTC_5fb36.dir/PQXX_HAVE_SPAN.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_5fb36.dir\\PQXX_HAVE_SPAN.cxx.obj /FdCMakeFiles\\cmTC_5fb36.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SPAN.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SPAN.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_SPAN: __cpp_lib_span is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:62 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SSIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6cf38
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_6cf38.dir\\PQXX_HAVE_SSIZE.cxx.obj /FdCMakeFiles\\cmTC_6cf38.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SSIZE.cxx
+        FAILED: CMakeFiles/cmTC_6cf38.dir/PQXX_HAVE_SSIZE.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_6cf38.dir\\PQXX_HAVE_SSIZE.cxx.obj /FdCMakeFiles\\cmTC_6cf38.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SSIZE.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_SSIZE.cxx(5): fatal error C1189: #error:  "No PQXX_HAVE_SSIZE: __cpp_lib_ssize is not set."
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:66 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_STRERROR_R"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f199c
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_f199c.dir\\PQXX_HAVE_STRERROR_R.cxx.obj /FdCMakeFiles\\cmTC_f199c.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_R.cxx
+        FAILED: CMakeFiles/cmTC_f199c.dir/PQXX_HAVE_STRERROR_R.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_f199c.dir\\PQXX_HAVE_STRERROR_R.cxx.obj /FdCMakeFiles\\cmTC_f199c.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_R.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(11): error C3861: strerror_r: идентификатор не найден
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2065: not: необъявленный идентификатор
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "not"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2065: not: необъявленный идентификатор
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_R.cxx(13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "res"
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:70 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_STRERROR_S"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c446b
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_c446b.dir\\PQXX_HAVE_STRERROR_S.cxx.obj /FdCMakeFiles\\cmTC_c446b.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_STRERROR_S.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c446b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c446b.dir\\PQXX_HAVE_STRERROR_S.cxx.obj  /out:cmTC_c446b.exe /implib:cmTC_c446b.lib /pdb:cmTC_c446b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:74 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4fb93
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_4fb93.dir\\PQXX_HAVE_THREAD_LOCAL.cxx.obj /FdCMakeFiles\\cmTC_4fb93.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_THREAD_LOCAL.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4fb93.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4fb93.dir\\PQXX_HAVE_THREAD_LOCAL.cxx.obj  /out:cmTC_4fb93.exe /implib:cmTC_4fb93.lib /pdb:cmTC_4fb93.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:78 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_YEAR_MONTH_DAY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b710a
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_b710a.dir\\PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj /FdCMakeFiles\\cmTC_b710a.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx
+        FAILED: CMakeFiles/cmTC_b710a.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_b710a.dir\\PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj /FdCMakeFiles\\cmTC_b710a.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx(6): error C2039: "year": не является членом "std::chrono".
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\__msvc_chrono.hpp(806): note:  см. объявление "std::chrono"
+        C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\PQXX_HAVE_YEAR_MONTH_DAY.cxx(6): error C2065: year: необъявленный идентификатор
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:82 (try_compile)"
+      - "libpqxx/cmake/config.cmake:16 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/libpqxx/cmake"
+    buildResult:
+      variable: "no_need_fslib"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/mrsas/Desktop/Cpp_Folder_0/SQL/Cpp_PostgresSQL_/out/build/x64-Debug/libpqxx-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_23304
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_23304.dir\\no_need_fslib.cxx.obj /FdCMakeFiles\\cmTC_23304.dir\\ /FS -c C:\\Users\\mrsas\\Desktop\\Cpp_Folder_0\\SQL\\Cpp_PostgresSQL_\\libpqxx\\config-tests\\no_need_fslib.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_23304.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_23304.dir\\no_need_fslib.cxx.obj  /out:cmTC_23304.exe /implib:cmTC_23304.lib /pdb:cmTC_23304.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...

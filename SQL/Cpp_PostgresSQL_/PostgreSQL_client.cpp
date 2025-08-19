@@ -1,6 +1,7 @@
 #include<iostream>
 #include<Windows.h>
 #include <string>
+#include <vector>
 
 #include <pqxx/pqxx>
 
@@ -130,57 +131,54 @@ public:
 
 //поиск клиента
 //searchTerm - выражение для поиска
-    void findClient(const std::string& searchTerm) 
+    std::vector<int> findClient(const std::string& searchTerm)
     {
         pqxx::work tx(conn);
 
-    //поиск по имени/фамилии/почте
+        //поиск по имени/фамилии/почте
         auto res1 = tx.exec_params
         (
-            "SELECT c.id, c.first_name, c.last_name, c.email "
+            "SELECT c.id "
             "FROM clients c "
             "WHERE c.first_name ILIKE $1 OR c.last_name ILIKE $1 OR c.email ILIKE $1",
             "%" + searchTerm + "%"
         );
 
-    //поиск по телефону
-    //объединяем таблицы clients и phones
+        //поиск по телефону
+        //объединяем таблицы clients и phones
         auto res2 = tx.exec_params
         (
-            "SELECT c.id, c.first_name, c.last_name, c.email "
+            "SELECT c.id "
             "FROM clients c "
             "JOIN phones p ON c.id=p.client_id "
             "WHERE p.phone ILIKE $1",
             "%" + searchTerm + "%"
         );
+       
+        std::vector<int> clientIDs; //вектор id клиентов
 
-    //получаем в res1 и res2 строку, удовлетворяющую условию
 
-        std::cout << "Результаты поиска:\n";
-
-    //пробегаем по строкам row в res1,
-    //в цикле row не изменяем, поэтому const
-        for (const auto& row : res1) 
+        if (res1.empty())
         {
-            std::cout   << "ID: "           << row["id"].as<int>()
-                        << ", Имя: "        << row["first_name"].c_str()
-                        << ", Фамилия: "    << row["last_name"].c_str()
-                        << ", Email: "      << row["email"].c_str() << std::endl;
+            for (const auto& row : res2)
+            {
+                clientIDs.push_back(row["id"].as<int>());
+            }
         }
-
-        for (const auto& row : res2) {
-            std::cout   << "ID: "           << row["id"].as<int>()
-                        << ", Имя: "        << row["first_name"].c_str()
-                        << ", Фамилия: "    << row["last_name"].c_str()
-                        << ", Email: "      << row["email"].c_str() << std::endl;
+        else if (res2.empty())
+        {
+            for (const auto& row : res1)
+            {
+                clientIDs.push_back(row["id"].as<int>());
+            }
         }
-
-        if (res1.empty() && res2.empty()) {
+        else if (res1.empty() && res2.empty()) 
+        {
             std::cout << "Ничего не найдено.\n";
         }
 
+        return clientIDs; //возвращаем вектор id клиентов
     }
-
 };
 
 
@@ -208,7 +206,12 @@ int main()
         clients.updateClient(client1, "Ivan", "Ivanov", "IvanovI@email");
 
         //ищем по email
-        clients.findClient("IvanovI@email");
+        auto ids = clients.findClient("IvanovI@email");
+
+        for (int id : ids)
+        {
+            std::cout << "Найден клиент с ID: " << id << std::endl;
+        }
 
         //удаляем телефон клиента
         clients.deletePhone(client1, "88005553535");

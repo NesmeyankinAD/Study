@@ -29,3 +29,5 @@
 2063	3480	7771310758208430	libpqxx-build/src/CMakeFiles/pqxx.dir/transaction_base.cxx.obj	e42e711af7b1246e
 3526	3617	7771310759416988	libpqxx-build/src/pqxx.lib	a24eb6f4ad941b5
 1100	1253	7771471050054840	PostgreSQL_client.exe	910c2dc745bbb900
+64	1416	7773290873776518	CMakeFiles/PostgreSQL_client.dir/PostgreSQL_client.cpp.obj	bb0ae042bf7f414f
+1416	1721	7773290876236680	PostgreSQL_client.exe	910c2dc745bbb900
