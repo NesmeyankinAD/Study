@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+COPY . E:/Cpp_Folder_0/module_7/Docker/Task_1
+WORKDIR E:/Cpp_Folder_0/module_7/Docker/Task_1
+RUN apt update
+RUN apt install -y g++ nano
+RUN g++ -o Hello Hello.cpp
+CMD ["./Hello"]
